@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Swiggy Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">🍔 Swiggy Clone</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+        </nav>
+    </header>
+
+    <section class="menu">
+        <h1>Our Delicious Menu</h1>
+        <div class="menu-container">
+            <div class="menu-item">
+                <img src="burger.jpg" alt="Burger">
+                <h3>Burger</h3>
+                <p>Price: $5.00</p>
+                <button class="add-to-cart" onclick="addToCart('Burger', 5.00)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="pizza.jpg" alt="Pizza">
+                <h3>Pizza</h3>
+                <p>Price: $8.00</p>
+                <button class="add-to-cart" onclick="addToCart('Pizza', 8.00)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="pasta.jpg" alt="Pasta">
+                <h3>Pasta</h3>
+                <p>Price: $7.00</p>
+                <button class="add-to-cart" onclick="addToCart('Pasta', 7.00)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="fries.jpg" alt="Fries">
+                <h3>Fries</h3>
+                <p>Price: $3.50</p>
+                <button class="add-to-cart" onclick="addToCart('Fries', 3.50)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Swiggy Clone. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
